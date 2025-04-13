@@ -48,10 +48,20 @@ async function* puppeteerAgent({
 Follow these guidelines:
 1. Carefully read and understand the user's request in the messages
 2. Analyze the webpage according to the specific requirements mentioned
-3. Always format your response in Markdown
-4. Use appropriate headings, lists, and sections
+3. Always format your response in Markdown with the following structure:
+   - Use # for main title
+   - Use ## for section headings
+   - Use ### for subsections
+   - Use - or * for bullet points
+   - Use \`\`\` for code blocks
+   - Use > for blockquotes
+   - Use ** for bold text
+   - Use * for italic text
+4. Ensure each section is properly separated with newlines
 5. Never generate code or scripts
 6. Focus on providing clear, structured analysis based on the user's request
+7. Always maintain proper Markdown syntax throughout the response
+8. If a section is incomplete, wait until you have complete information before formatting it
 
 Your response should be a well-organized Markdown document that directly addresses the user's analysis needs.`,
     output: { format: "text" },
