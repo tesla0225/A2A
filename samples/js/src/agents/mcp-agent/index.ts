@@ -3,7 +3,6 @@ import {
   TaskContext,
   TaskYieldUpdate,
   schema,
-  InMemoryTaskStore, // Assuming default store
 } from "../../server/index.js";
 import { MessageData } from "genkit";
 import { ai } from "./genkit.js";
@@ -171,7 +170,7 @@ const movieAgentCard: schema.AgentCard = {
 const server = new A2AServer(movieAgentHandler, { card: movieAgentCard });
 
 // Start the server
-server.start(41242); // Defaults to port 41241
+server.start(); // Defaults to port 41241
 
 console.log("[MovieAgent] Server started on http://localhost:41241");
 console.log("[MovieAgent] Press Ctrl+C to stop the server");
